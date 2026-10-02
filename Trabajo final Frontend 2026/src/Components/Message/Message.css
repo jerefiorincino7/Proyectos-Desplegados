@@ -1,0 +1,82 @@
+.contenedor-mensaje {
+    display: flex;
+    width: 100%;
+    margin-bottom: 8px;
+    box-sizing: border-box;
+}
+
+.mensaje-propio {
+    justify-content: flex-end;
+}
+
+.mensaje-recibido {
+    justify-content: flex-start;
+}
+
+.burbuja-mensaje {
+    max-width: 60%;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 14.2px;
+    line-height: 1.4;
+    position: relative;
+    box-shadow: 0 1px 0.5px var(--wa-bubble-shadow);
+}
+
+.mensaje-propio .burbuja-mensaje {
+    background-color: var(--wa-bubble-out);
+    color: var(--wa-bubble-text);
+    border-top-right-radius: 0px;
+}
+
+.mensaje-recibido .burbuja-mensaje {
+    background-color: var(--wa-bubble-in);
+    color: var(--wa-bubble-text);
+    border-top-left-radius: 0px;
+}
+
+.autor-mensaje {
+    display: block;
+    font-weight: 600;
+    font-size: 12.5px;
+    color: var(--wa-author);
+    margin-bottom: 2px;
+}
+
+.contenido-mensaje {
+    margin: 0;
+    word-wrap: break-word;
+}
+
+.metadatos-mensaje {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 4px;
+    margin-top: 4px;
+    float: right;
+    margin-left: 12px;
+}
+
+.hora-mensaje {
+    font-size: 11px;
+    color: var(--wa-meta-text);
+}
+
+.mensaje-propio .hora-mensaje {
+    color: var(--wa-meta-out);
+}
+
+.doble-check {
+    display: inline-flex;
+    align-items: center;
+    line-height: 0;
+}
+
+.doble-check.leido {
+    color: var(--wa-check-read);
+}
+
+.doble-check.enviado {
+    color: var(--wa-check-sent);
+}
