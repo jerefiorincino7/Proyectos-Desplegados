@@ -1,0 +1,109 @@
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.login-field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.login-field label {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--wa-text-secondary);
+}
+
+.login-field input {
+    width: 100%;
+    padding: 11px 12px;
+    font-size: 15px;
+    color: var(--wa-text-primary);
+    background-color: var(--wa-input);
+    border: 1px solid var(--wa-border);
+    border-radius: 8px;
+}
+
+.login-field input::placeholder {
+    color: var(--wa-text-secondary);
+    opacity: 0.7;
+}
+
+.login-field input:focus {
+    outline: none;
+    border-color: var(--wa-green);
+    box-shadow: 0 0 0 2px rgba(0, 168, 132, 0.25);
+}
+
+.login-field input[aria-invalid='true'] {
+    border-color: #d33;
+}
+
+.login-field-error {
+    font-size: 13px;
+}
+
+.login-password-input {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.login-password-input input {
+    padding-right: 42px;
+}
+
+.login-password-toggle {
+    position: absolute;
+    right: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    color: var(--wa-icon);
+    background: none;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.login-password-toggle:hover {
+    background-color: var(--wa-icon-hover);
+}
+
+.login-form-error {
+    font-size: 14px;
+    text-align: center;
+}
+
+.login-submit {
+    width: 100%;
+    padding: 12px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: var(--wa-green);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.15s ease;
+}
+
+.login-submit:hover:not(:disabled) {
+    background-color: var(--wa-green-dark);
+}
+
+.login-submit:disabled {
+    opacity: 0.7;
+    cursor: progress;
+}
+
+.login-hint {
+    font-size: 13px;
+    text-align: center;
+    color: var(--wa-text-secondary);
+}
