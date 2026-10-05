@@ -125,15 +125,14 @@ a {
 .modal {
     background-color: var(--wa-bg);
     color: var(--wa-text-primary);
-    padding: 10px;
-    border-radius: 10px;
-    min-width: 550px;
-    min-height: 400px;
+    padding: 16px;
+    border-radius: 12px;
+    width: 92vw;
+    max-width: 100%;
 }
 
 .error-text {
     color: red;
-
 }
 
 .contact-image-container {
@@ -154,15 +153,13 @@ a {
     object-fit: cover;
 }
 
-
 .app-layout {
     display: flex;
     flex-direction: row;
-    height: 100vh;
+    height: 100dvh;
     overflow: hidden;
     background-color: var(--wa-bg);
 }
-
 
 .contact-link {
     display: block;
@@ -171,4 +168,175 @@ a {
 
 .contact-link.active .contact-option {
     background-color: var(--wa-selected);
+}
+
+/* ==========================================================================
+   SISTEMA DE DISEÑO RESPONSIVO MOBILE-FIRST (320px hasta 2000px+)
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. BASE: MÓVILES PEQUEÑOS / ESTÁNDAR (320px en adelante)
+   Dispositivos: Teléfonos compactos (iPhone SE, Android económicos)
+   -------------------------------------------------------------------------- */
+.sidebar {
+    width: 100%;
+    height: 100dvh;
+}
+
+.login-screen {
+    padding: 16px;
+}
+
+.login-card {
+    width: 100%;
+    max-width: 100%;
+    padding: 24px 18px;
+    border-radius: 10px;
+}
+
+.chat-panel {
+    width: 100%;
+    height: 100dvh;
+}
+
+.chat-header {
+    padding: 8px 12px;
+}
+
+.chat-messages {
+    padding: 12px 3% 6px;
+}
+
+.chat-composer {
+    padding: 6px 8px;
+    gap: 6px;
+}
+
+.composer-icon-btn,
+.composer-send {
+    width: 38px;
+    height: 38px;
+}
+
+.composer-input {
+    font-size: 14px;
+    padding: 9px 12px;
+}
+
+/* --------------------------------------------------------------------------
+   2. MÓVILES GRANDES / PHABLETS (Desde 481px)
+   Dispositivos: Smartphones grandes y tablets verticales (iPhone Pro Max, Galaxy Ultra)
+   -------------------------------------------------------------------------- */
+@media (min-width: 481px) {
+    .modal {
+        width: 85vw;
+        max-width: 480px;
+        padding: 20px;
+    }
+
+    .login-card {
+        max-width: 420px;
+        padding: 28px 24px;
+    }
+
+    .chat-messages {
+        padding: 14px 4% 8px;
+    }
+
+    .chat-composer {
+        padding: 8px 12px;
+    }
+}
+
+/* --------------------------------------------------------------------------
+   3. TABLETS / LAPTOPS PEQUEÑAS (Desde 769px)
+   Dispositivos: iPads, tablets en horizontal, netbooks
+   -------------------------------------------------------------------------- */
+@media (min-width: 769px) {
+    .sidebar {
+        width: 300px;
+        height: 100vh;
+    }
+
+    .app-layout,
+    .chat-panel {
+        height: 100vh;
+    }
+
+    .modal {
+        min-width: 480px;
+        max-width: 540px;
+    }
+
+    .login-card {
+        max-width: 380px;
+    }
+
+    .chat-messages {
+        padding: 16px 5% 8px;
+    }
+}
+
+/* --------------------------------------------------------------------------
+   4. LAPTOPS ESTÁNDAR (Desde 1025px)
+   Dispositivos: Laptops comunes (13" a 15"), escritorios compactos
+   -------------------------------------------------------------------------- */
+@media (min-width: 1025px) {
+    .sidebar {
+        width: 350px;
+    }
+
+    .modal {
+        min-width: 520px;
+    }
+
+    .chat-messages {
+        padding: 20px 6% 8px;
+    }
+}
+
+/* --------------------------------------------------------------------------
+   5. ESCRITORIOS / MONITORES FULL HD (Desde 1281px)
+   Dispositivos: Monitores estándar de PC o laptops de alta resolución
+   -------------------------------------------------------------------------- */
+@media (min-width: 1281px) {
+    .sidebar {
+        width: 380px;
+    }
+
+    .modal {
+        min-width: 560px;
+    }
+
+    .chat-messages {
+        padding: 24px 8% 10px;
+    }
+}
+
+/* --------------------------------------------------------------------------
+   6. PANTALLAS ULTRA ANCHAS / 2K O SUPERIOR (Desde 1921px)
+   Dispositivos: Monitores grandes de alta definición (2K / 4K / Ultrawide)
+   -------------------------------------------------------------------------- */
+@media (min-width: 1921px) {
+    html {
+        font-size: 17px;
+    }
+
+    .sidebar {
+        width: 440px;
+    }
+
+    .modal {
+        min-width: 620px;
+        padding: 24px;
+    }
+
+    .login-card {
+        max-width: 460px;
+        padding: 36px 32px;
+    }
+
+    .chat-messages {
+        padding: 30px 14% 16px;
+    }
 }
