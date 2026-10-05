@@ -278,30 +278,7 @@ a {
 }
 
 /* --------------------------------------------------------------------------
-   2. MÓVILES GRANDES / PHABLETS (Desde 481px)
-   -------------------------------------------------------------------------- */
-@media (min-width: 481px) {
-    .modal {
-        max-width: 480px;
-        padding: 20px;
-    }
-
-    .login-card {
-        max-width: 420px;
-        padding: 28px 24px;
-    }
-
-    .chat-messages {
-        padding: 14px 4% 8px;
-    }
-
-    .chat-composer {
-        padding: 8px 12px;
-    }
-}
-
-/* --------------------------------------------------------------------------
-   3. TABLETS / LAPTOPS PEQUEÑAS (Desde 769px)
+   2. TABLETS / LAPTOPS PEQUEÑAS (Desde 769px)
    -------------------------------------------------------------------------- */
 @media (min-width: 769px) {
     .app-layout {
@@ -348,7 +325,7 @@ a {
 }
 
 /* --------------------------------------------------------------------------
-   4. LAPTOPS ESTÁNDAR (Desde 1025px)
+   3. LAPTOPS ESTÁNDAR (Desde 1025px)
    -------------------------------------------------------------------------- */
 @media (min-width: 1025px) {
     .app-layout .sidebar {
@@ -365,7 +342,7 @@ a {
 }
 
 /* --------------------------------------------------------------------------
-   5. ESCRITORIOS / MONITORES FULL HD (Desde 1281px)
+   4. ESCRITORIOS / MONITORES FULL HD (Desde 1281px)
    -------------------------------------------------------------------------- */
 @media (min-width: 1281px) {
     .app-layout .sidebar {
@@ -382,7 +359,7 @@ a {
 }
 
 /* --------------------------------------------------------------------------
-   6. PANTALLAS ULTRA ANCHAS / 2K O SUPERIOR (Desde 1921px)
+   5. PANTALLAS ULTRA ANCHAS / 2K O SUPERIOR (Desde 1921px)
    -------------------------------------------------------------------------- */
 @media (min-width: 1921px) {
     html {
