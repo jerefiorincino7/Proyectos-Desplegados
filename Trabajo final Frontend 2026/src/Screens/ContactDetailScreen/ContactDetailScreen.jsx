@@ -8,7 +8,7 @@ export default function ContactDetailScreen() {
 
     if (!selected_contact) {
         return (
-            <div className='app-layout'>
+            <div className='app-layout chat-layout'>
                 <Sidebar />
                 <section className='chat-panel chat-empty'>
                     <p>No se encontró el contacto.</p>
@@ -18,7 +18,7 @@ export default function ContactDetailScreen() {
     }
 
     return (
-        <div className='app-layout'>
+        <div className='app-layout chat-layout'>
             <Sidebar />
             <ChatPanel contact={selected_contact} />
         </div>

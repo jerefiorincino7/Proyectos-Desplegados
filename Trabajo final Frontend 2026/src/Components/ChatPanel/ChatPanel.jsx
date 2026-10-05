@@ -1,4 +1,5 @@
 import React, { useContext } from 'react'
+import { Link } from 'react-router'
 import './ChatPanel.css'
 import Message from '../Message/Message'
 import { ContactContext } from '../../Context/ContactContext'
@@ -50,6 +51,11 @@ export default function ChatPanel({ contact }) {
     return (
         <section className='chat-panel'>
             <header className='chat-header'>
+                <Link to='/home' className='chat-back-btn' aria-label='Volver a chats'>
+                    <svg viewBox='0 0 24 24' width='22' height='22' fill='none' stroke='currentColor' strokeWidth='2.2' strokeLinecap='round' strokeLinejoin='round'>
+                        <path d='M19 12H5M12 19l-7-7 7-7' />
+                    </svg>
+                </Link>
                 <div className='contact-image-container chat-avatar'>
                     {contact.image
                         ? <img src={contact.image} alt={contact.name} className='contact-image' />

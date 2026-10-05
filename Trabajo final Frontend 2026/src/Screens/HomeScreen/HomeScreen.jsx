@@ -3,7 +3,7 @@ import ChatPanel from '../../Components/ChatPanel/ChatPanel'
 
 export default function HomeScreen() {
     return (
-        <div className='app-layout'>
+        <div className='app-layout home-layout'>
             <Sidebar />
             <ChatPanel contact={null} />
         </div>

@@ -114,26 +114,27 @@ a {
     width: 100vw;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.494);
-    z-index: 10;
-
+    z-index: 100;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    padding: 16px;
 }
 
 .modal {
     background-color: var(--wa-bg);
     color: var(--wa-text-primary);
-    padding: 10px;
-    border-radius: 10px;
-    min-width: 550px;
-    min-height: 400px;
+    padding: 16px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 480px;
+    min-width: 0;
+    box-sizing: border-box;
 }
 
 .error-text {
     color: red;
-
 }
 
 .contact-image-container {
@@ -154,15 +155,14 @@ a {
     object-fit: cover;
 }
 
-
 .app-layout {
     display: flex;
     flex-direction: row;
+    width: 100%;
     height: 100vh;
     overflow: hidden;
     background-color: var(--wa-bg);
 }
-
 
 .contact-link {
     display: block;
@@ -173,21 +173,77 @@ a {
     background-color: var(--wa-selected);
 }
 
+.chat-back-btn {
+    display: none;
+}
+
 /* ==========================================================================
    SISTEMA DE DISEÑO RESPONSIVO MOBILE-FIRST (320px hasta 2000px+)
    ========================================================================== */
 
 /* --------------------------------------------------------------------------
    1. BASE: MÓVILES PEQUEÑOS / ESTÁNDAR (320px en adelante)
-   Dispositivos: Teléfonos compactos (iPhone SE, Android económicos)
    -------------------------------------------------------------------------- */
 .sidebar {
     width: 100%;
-    height: 100dvh;
+    min-width: 0;
+    height: 100vh;
+}
+
+.chat-panel {
+    width: 100%;
+    min-width: 0;
+    height: 100vh;
+}
+
+/* En móviles (hasta 768px): alternar vista entre lista de chats y conversación */
+@media (max-width: 768px) {
+    .home-layout .chat-panel,
+    .app-layout .chat-empty {
+        display: none !important;
+    }
+
+    .home-layout .sidebar {
+        display: flex !important;
+        width: 100% !important;
+        flex: 1 1 100% !important;
+    }
+
+    .chat-layout .sidebar {
+        display: none !important;
+    }
+
+    .chat-layout .chat-panel {
+        display: flex !important;
+        width: 100% !important;
+        flex: 1 1 100% !important;
+    }
+
+    .chat-back-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 36px;
+        height: 36px;
+        color: var(--wa-icon);
+        border-radius: 50%;
+        margin-right: 4px;
+        flex-shrink: 0;
+        cursor: pointer;
+    }
+
+    .chat-back-btn:hover {
+        background-color: var(--wa-icon-hover);
+    }
+
+    .burbuja-mensaje {
+        max-width: 85% !important;
+    }
 }
 
 .login-screen {
     padding: 16px;
+    min-height: 100vh;
 }
 
 .login-card {
@@ -195,11 +251,6 @@ a {
     max-width: 100%;
     padding: 24px 18px;
     border-radius: 10px;
-}
-
-.chat-panel {
-    width: 100%;
-    height: 100dvh;
 }
 
 .chat-header {
@@ -228,11 +279,9 @@ a {
 
 /* --------------------------------------------------------------------------
    2. MÓVILES GRANDES / PHABLETS (Desde 481px)
-   Dispositivos: Smartphones grandes y tablets verticales (iPhone Pro Max, Galaxy Ultra)
    -------------------------------------------------------------------------- */
 @media (min-width: 481px) {
     .modal {
-        width: 85vw;
         max-width: 480px;
         padding: 20px;
     }
@@ -253,21 +302,35 @@ a {
 
 /* --------------------------------------------------------------------------
    3. TABLETS / LAPTOPS PEQUEÑAS (Desde 769px)
-   Dispositivos: iPads, tablets en horizontal, netbooks
    -------------------------------------------------------------------------- */
 @media (min-width: 769px) {
-    .sidebar {
-        width: 300px;
+    .app-layout {
         height: 100vh;
     }
 
-    .app-layout,
-    .chat-panel {
+    .app-layout .sidebar {
+        display: flex !important;
+        width: 300px !important;
         height: 100vh;
+        flex-shrink: 0 !important;
+        flex: none !important;
+    }
+
+    .app-layout .chat-panel {
+        display: flex !important;
+        flex: 1 1 auto !important;
+        height: 100vh;
+    }
+
+    .app-layout .chat-empty {
+        display: flex !important;
+    }
+
+    .chat-back-btn {
+        display: none !important;
     }
 
     .modal {
-        min-width: 480px;
         max-width: 540px;
     }
 
@@ -278,59 +341,60 @@ a {
     .chat-messages {
         padding: 16px 5% 8px;
     }
+
+    .burbuja-mensaje {
+        max-width: 65% !important;
+    }
 }
 
 /* --------------------------------------------------------------------------
    4. LAPTOPS ESTÁNDAR (Desde 1025px)
-   Dispositivos: Laptops comunes (13" a 15"), escritorios compactos
    -------------------------------------------------------------------------- */
 @media (min-width: 1025px) {
-    .sidebar {
-        width: 350px;
-    }
-
-    .modal {
-        min-width: 520px;
+    .app-layout .sidebar {
+        width: 350px !important;
     }
 
     .chat-messages {
         padding: 20px 6% 8px;
     }
+
+    .modal {
+        max-width: 580px;
+    }
 }
 
 /* --------------------------------------------------------------------------
    5. ESCRITORIOS / MONITORES FULL HD (Desde 1281px)
-   Dispositivos: Monitores estándar de PC o laptops de alta resolución
    -------------------------------------------------------------------------- */
 @media (min-width: 1281px) {
-    .sidebar {
-        width: 380px;
-    }
-
-    .modal {
-        min-width: 560px;
+    .app-layout .sidebar {
+        width: 380px !important;
     }
 
     .chat-messages {
         padding: 24px 8% 10px;
     }
+
+    .modal {
+        max-width: 600px;
+    }
 }
 
 /* --------------------------------------------------------------------------
    6. PANTALLAS ULTRA ANCHAS / 2K O SUPERIOR (Desde 1921px)
-   Dispositivos: Monitores grandes de alta definición (2K / 4K / Ultrawide)
    -------------------------------------------------------------------------- */
 @media (min-width: 1921px) {
     html {
         font-size: 17px;
     }
 
-    .sidebar {
-        width: 440px;
+    .app-layout .sidebar {
+        width: 440px !important;
     }
 
     .modal {
-        min-width: 620px;
+        max-width: 680px;
         padding: 24px;
     }
 
