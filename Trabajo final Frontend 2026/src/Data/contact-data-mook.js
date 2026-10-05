@@ -86,14 +86,14 @@ const contact_list_server = [
     },
     {
         id: 4,
-        name: 'Jane Doe',
+        name: 'Juanjo',
         last_connection: createDate(7, 12, 15),
         image: '/Fred.jpg',
         messages: [
             {
                 id: 1,
                 content: 'Holaaaaaaa, tanto tiempo',
-                author: 'Jane Doe',
+                author: 'Juanjo',
                 created_at: createDate(7, 12, 15),
                 status: 'unseen'
             }
@@ -119,13 +119,44 @@ const contact_list_server = [
         name: 'Viaje Calamuchita 2027',
         type: 'group',
         image: null,
-        members: ['David', 'Jeff', 'Oscar Miaustri', 'Jane Doe', 'Ricardo'],
+        members: ['David', 'Jeff', 'Oscar Miaustri', 'Juanjo', 'Ricardo'],
         last_connection: createDate(0, 12, 0),
         messages: [
-            { id: 1, author: 'Oscar Miaustri', content: '¡Miau miau miau miau!', created_at: createDate(1, 10, 0), status: 'unseen' },
-            { id: 2, author: 'David', content: '¿Cómo hacemos al final?', created_at: createDate(1, 10, 5), status: 'unseen' },
-            { id: 3, author: 'Jeff', content: '¿Vamos en micro o en auto hasta allá?', created_at: createDate(1, 10, 7), status: 'unseen' },
-            { id: 4, author: 'Ricardo', content: 'Por mi vayamos en auto, pero como ustedes quieran!!', created_at: createDate(0, 9, 30), status: 'unseen' },
+            { 
+                id: 1, 
+                author: 'Oscar Miaustri', 
+                content: '¡Miau miau miau miau!', 
+                created_at: createDate(1, 10, 0), 
+                status: 'unseen'
+            },
+            { 
+                id: 2, 
+                author: 'David', 
+                content: '¿Cómo hacemos al final?', 
+                created_at: createDate(1, 10, 5), 
+                status: 'unseen'
+            },
+            { 
+                id: 3, 
+                author: 'Jeff', 
+                content: '¿Vamos en micro o en auto hasta allá?', 
+                created_at: createDate(1, 10, 7), 
+                status: 'unseen'
+            },
+            {
+                id: 4, 
+                author: 'Ricardo', 
+                content: 'Por mi vayamos en auto, pero como ustedes quieran!!', 
+                created_at: createDate(0, 9, 30), 
+                status: 'unseen'
+            },
+            {
+                id: 5,
+                author: "Juanjo",
+                content: "Yo para ir en micro tendría que juntar unos pesos",
+                created_at: createDate(0, 11, 0),
+                status: "unseen"
+            }
         ]
     }
 ]
