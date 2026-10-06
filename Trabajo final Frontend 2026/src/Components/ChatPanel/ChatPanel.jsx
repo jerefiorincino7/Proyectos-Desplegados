@@ -117,7 +117,13 @@ export default function ChatPanel({ contact }) {
                 ))}
             </div>
 
-            <form className='chat-composer' onSubmit={(e) => e.preventDefault()}>
+            <form
+                className='chat-composer'
+                onSubmit={(evento) => {
+                    evento.preventDefault()
+                    handleSend()
+                }}
+            >
                 <button type='button' className='composer-icon-btn' aria-label='Emoji'>
                     <svg viewBox='0 0 24 24' width='24' height='24' fill='none' stroke='currentColor' strokeWidth='2' strokeLinecap='round'>
                         <circle cx='12' cy='12' r='9' />

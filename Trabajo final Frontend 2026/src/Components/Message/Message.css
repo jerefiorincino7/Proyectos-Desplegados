@@ -20,18 +20,18 @@
     font-size: 14.2px;
     line-height: 1.4;
     position: relative;
-    box-shadow: 0 1px 0.5px var(--wa-bubble-shadow);
+    box-shadow: 0 1px 0.5px var(--kk-bubble-shadow);
 }
 
 .mensaje-propio .burbuja-mensaje {
-    background-color: var(--wa-bubble-out);
-    color: var(--wa-bubble-text);
+    background-color: var(--kk-bubble-out);
+    color: var(--kk-bubble-text);
     border-top-right-radius: 0px;
 }
 
 .mensaje-recibido .burbuja-mensaje {
-    background-color: var(--wa-bubble-in);
-    color: var(--wa-bubble-text);
+    background-color: var(--kk-bubble-in);
+    color: var(--kk-bubble-text);
     border-top-left-radius: 0px;
 }
 
@@ -39,7 +39,7 @@
     display: block;
     font-weight: 600;
     font-size: 12.5px;
-    color: var(--wa-author);
+    color: var(--kk-author);
     margin-bottom: 2px;
 }
 
@@ -60,11 +60,11 @@
 
 .hora-mensaje {
     font-size: 11px;
-    color: var(--wa-meta-text);
+    color: var(--kk-meta-text);
 }
 
 .mensaje-propio .hora-mensaje {
-    color: var(--wa-meta-out);
+    color: var(--kk-meta-out);
 }
 
 .doble-check {
@@ -74,9 +74,9 @@
 }
 
 .doble-check.leido {
-    color: var(--wa-check-read);
+    color: var(--kk-check-read);
 }
 
 .doble-check.enviado {
-    color: var(--wa-check-sent);
+    color: var(--kk-check-sent);
 }

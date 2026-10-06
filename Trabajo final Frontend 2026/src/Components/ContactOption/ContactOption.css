@@ -4,13 +4,13 @@
     align-items: center;
     padding: 10px 16px;
     gap: 14px;
-    border-bottom: 1px solid var(--wa-border);
+    border-bottom: 1px solid var(--kk-border);
     cursor: pointer;
     transition: background-color 0.15s;
 }
 
 .contact-option:hover {
-    background-color: var(--wa-hover);
+    background-color: var(--kk-hover);
 }
 
 .contact-info {
@@ -24,13 +24,13 @@
 .contact-name {
     font-size: 16px;
     font-weight: 400;
-    color: var(--wa-text-primary);
+    color: var(--kk-text-primary);
     margin: 0;
 }
 
 .contact-preview {
     font-size: 13px;
-    color: var(--wa-text-secondary);
+    color: var(--kk-text-secondary);
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -47,7 +47,7 @@
 
 .contact-time {
     font-size: 12px;
-    color: var(--wa-text-secondary);
+    color: var(--kk-text-secondary);
 }
 
 .contact-badge {
@@ -58,7 +58,7 @@
     height: 20px;
     padding: 0 5px;
     border-radius: 50%;
-    background-color: var(--wa-badge);
+    background-color: var(--kk-badge);
     color: #ffffff;
     font-size: 11px;
     font-weight: 500;
@@ -70,7 +70,7 @@
     align-items: center;
     width: 100%;
     height: 100%;
-    background-color: var(--wa-green-dark);
+    background-color: var(--kk-primary-hover);
     color: #ffffff;
     font-size: 20px;
     font-weight: 500;

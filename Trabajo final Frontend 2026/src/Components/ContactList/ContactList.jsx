@@ -12,7 +12,7 @@ export default function ContactsList() {
     const location = useLocation()
 
     if (contacts.length === 0) {
-        return <span>Todavía no tenes contactos</span>
+        return <span className='sidebar-empty'>Todavía no tenes contactos</span>
     }
 
     const contactsJsx = []
@@ -54,7 +54,7 @@ export default function ContactsList() {
             </div>
             <div className="sidebar-contacts">
                 {filteredContacts.length === 0
-                    ? <span>No se encontró el contacto</span>
+                    ? <span className='sidebar-empty'>No se encontró el contacto</span>
                     : contactsJsx
                 }
             </div>

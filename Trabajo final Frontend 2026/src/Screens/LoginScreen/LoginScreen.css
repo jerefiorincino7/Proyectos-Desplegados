@@ -4,8 +4,8 @@
     justify-content: center;
     min-height: 100vh;
     padding: 24px;
-    background-color: var(--wa-chat-bg);
-    background-image: var(--wa-chat-pattern);
+    background-color: var(--kk-chat-bg);
+    background-image: var(--kk-chat-pattern);
 }
 
 .login-card {
@@ -13,9 +13,9 @@
     width: 100%;
     max-width: 400px;
     padding: 32px 28px;
-    background-color: var(--wa-bg);
-    color: var(--wa-text-primary);
-    border: 1px solid var(--wa-border);
+    background-color: var(--kk-bg);
+    color: var(--kk-text-primary);
+    border: 1px solid var(--kk-border);
     border-radius: 12px;
     box-shadow: 0 2px 14px rgba(11, 20, 26, 0.18);
 }
@@ -27,15 +27,15 @@
 }
 
 .login-theme-toggle .theme-toggle {
-    color: var(--wa-icon);
+    color: var(--kk-icon);
 }
 
 .login-theme-toggle .theme-toggle:hover {
-    background-color: var(--wa-icon-hover);
+    background-color: var(--kk-icon-hover);
 }
 
 .login-theme-toggle .theme-toggle:focus-visible {
-    outline: 2px solid var(--wa-icon);
+    outline: 2px solid var(--kk-icon);
 }
 
 .login-header {
@@ -54,7 +54,7 @@
     width: 48px;
     height: 48px;
     color: #ffffff;
-    background-color: var(--wa-green);
+    background-color: var(--kk-primary);
     border-radius: 50%;
 }
 
@@ -66,5 +66,5 @@
 .login-header-text p {
     margin-top: 2px;
     font-size: 13px;
-    color: var(--wa-text-secondary);
+    color: var(--kk-text-secondary);
 }

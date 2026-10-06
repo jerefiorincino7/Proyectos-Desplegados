@@ -4,8 +4,8 @@
     flex-shrink: 0;
     display: flex;
     flex-direction: column;
-    background-color: var(--wa-bg);
-    border-right: 1px solid var(--wa-border);
+    background-color: var(--kk-bg);
+    border-right: 1px solid var(--kk-border);
 }
 
 .sidebar-logo {
@@ -14,11 +14,27 @@
     align-items: center;
     justify-content: space-between;
     padding: 12px 16px;
-    background-color: var(--wa-topbar);
+    background-color: var(--kk-topbar);
 }
 
 .sidebar-logo svg {
     color: #ffffff;
+}
+
+.sidebar-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-width: 0;
+}
+
+.sidebar-brand span {
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .sidebar-header {
@@ -26,7 +42,7 @@
     flex-direction: row;
     align-items: center;
     padding: 10px 16px;
-    background-color: var(--wa-topbar);
+    background-color: var(--kk-topbar);
     gap: 10px;
 }
 
@@ -35,7 +51,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-color: var(--wa-input);
+    background-color: var(--kk-input);
     border-radius: 20px;
     padding: 0 12px;
     height: 35px;
@@ -48,11 +64,11 @@
     font-size: 14px;
     background: transparent;
     padding: 0 8px;
-    color: var(--wa-text-primary);
+    color: var(--kk-text-primary);
 }
 
 .sidebar-search input::placeholder {
-    color: var(--wa-text-secondary);
+    color: var(--kk-text-secondary);
 }
 
 .sidebar-contacts {
@@ -60,11 +76,18 @@
     overflow-y: auto;
 }
 
+.sidebar-empty {
+    display: block;
+    padding: 16px;
+    font-size: 14px;
+    color: var(--kk-text-secondary);
+}
+
 .sidebar-contacts::-webkit-scrollbar {
     width: 6px;
 }
 
 .sidebar-contacts::-webkit-scrollbar-thumb {
-    background-color: var(--wa-scroll-thumb);
+    background-color: var(--kk-scroll-thumb);
     border-radius: 3px;
 }

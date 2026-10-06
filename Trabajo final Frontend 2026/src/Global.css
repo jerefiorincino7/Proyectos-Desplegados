@@ -1,81 +1,86 @@
 :root {
-    --wa-green-dark: #075e54;
-    --wa-green: #00a884;
-    --wa-bg: #ffffff;
-    --wa-hover: #f5f6f6;
-    --wa-selected: #d9fdd3;
-    --wa-border: #e9edef;
-    --wa-text-primary: #111b21;
-    --wa-text-secondary: #667781;
-    --wa-badge: #25d366;
-    --wa-font: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    --kk-primary: #1976C9;
+    --kk-primary-hover: #1565C0;
+    --kk-bg: #ffffff;
+    --kk-hover: #f3f6f9;
+    --kk-selected: #d9ecfb;
+    --kk-border: #e4eaf0;
+    --kk-text-primary: #111b21;
+    --kk-text-secondary: #5a6b7a;
+    --kk-badge: #1976C9;
+    --kk-font: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 
-    --wa-topbar: #00a884;
-    --wa-header: #f0f2f5;
-    --wa-empty-bg: #f0f2f5;
-    --wa-icon: #54656f;
-    --wa-icon-hover: rgba(11, 20, 26, 0.06);
+    --kk-topbar: #1976C9;
+    --kk-header: #edf4fc;
+    --kk-empty-bg: #edf4fc;
+    --kk-icon: #54656f;
+    --kk-icon-hover: rgba(11, 20, 26, 0.06);
 
-    --wa-chat-bg: #efeae2;
-    --wa-chat-pattern: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 400 400'%3E%3Cg fill='none' stroke='%230b141a' stroke-opacity='0.06' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='58' cy='55' r='17'/%3E%3Cpath d='M48 62q10 10 20 0'/%3E%3Ccircle cx='52' cy='50' r='1.8'/%3E%3Ccircle cx='64' cy='50' r='1.8'/%3E%3Cpath d='M175 78c-9-13-27-8-27 5 0 12 16 22 27 33 11-11 27-21 27-33 0-13-18-18-27-5z'/%3E%3Cpath d='M330 32l6 13 14 2-10 10 2 14-12-7-13 7 3-14-10-10 14-2z'/%3E%3Cpath d='M60 155h50a9 9 0 0 1 9 9v26a9 9 0 0 1-9 9H82l-13 12v-12h-9a9 9 0 0 1-9-9v-26a9 9 0 0 1 9-9z'/%3E%3Cpath d='M195 205v-38l28-7v38'/%3E%3Cpath d='M195 205l28-7'/%3E%3Ccircle cx='189' cy='207' r='7'/%3E%3Ccircle cx='217' cy='200' r='7'/%3E%3Crect x='45' y='285' width='48' height='34' rx='7'/%3E%3Ccircle cx='69' cy='302' r='11'/%3E%3Cpath d='M58 285l6-9h14l6 9'/%3E%3Cpath d='M150 300q12-16 24 0t24 0t24 0'/%3E%3Cpath d='M320 260l46-16-18 46-9-18z'/%3E%3Cpath d='M320 260l46-16-27 29'/%3E%3Cpath d='M360 350v24M348 362h24'/%3E%3Cpath d='M250 345h34a7 7 0 0 1 7 7v16a7 7 0 0 1-7 7h-19l-10 9v-9h-12a7 7 0 0 1-7-7v-16a7 7 0 0 1 7-7z'/%3E%3Cpath d='M110 105q20 25 45 15'/%3E%3C/g%3E%3C/svg%3E");
+    --kk-chat-bg: #eaf2fa;
+    --kk-chat-pattern: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 400 400'%3E%3Cg fill='none' stroke='%231976c9' stroke-opacity='0.07' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='58' cy='55' r='17'/%3E%3Cpath d='M48 62q10 10 20 0'/%3E%3Ccircle cx='52' cy='50' r='1.8'/%3E%3Ccircle cx='64' cy='50' r='1.8'/%3E%3Cpath d='M175 78c-9-13-27-8-27 5 0 12 16 22 27 33 11-11 27-21 27-33 0-13-18-18-27-5z'/%3E%3Cpath d='M330 32l6 13 14 2-10 10 2 14-12-7-13 7 3-14-10-10 14-2z'/%3E%3Cpath d='M60 155h50a9 9 0 0 1 9 9v26a9 9 0 0 1-9 9H82l-13 12v-12h-9a9 9 0 0 1-9-9v-26a9 9 0 0 1 9-9z'/%3E%3Cpath d='M195 205v-38l28-7v38'/%3E%3Cpath d='M195 205l28-7'/%3E%3Ccircle cx='189' cy='207' r='7'/%3E%3Ccircle cx='217' cy='200' r='7'/%3E%3Crect x='45' y='285' width='48' height='34' rx='7'/%3E%3Ccircle cx='69' cy='302' r='11'/%3E%3Cpath d='M58 285l6-9h14l6 9'/%3E%3Cpath d='M150 300q12-16 24 0t24 0t24 0'/%3E%3Cpath d='M320 260l46-16-18 46-9-18z'/%3E%3Cpath d='M320 260l46-16-27 29'/%3E%3Cpath d='M360 350v24M348 362h24'/%3E%3Cpath d='M250 345h34a7 7 0 0 1 7 7v16a7 7 0 0 1-7 7h-19l-10 9v-9h-12a7 7 0 0 1-7-7v-16a7 7 0 0 1 7-7z'/%3E%3Cpath d='M110 105q20 25 45 15'/%3E%3C/g%3E%3C/svg%3E");
 
-    --wa-bubble-in: #ffffff;
-    --wa-bubble-out: #d9fdd3;
-    --wa-bubble-text: #111b21;
-    --wa-author: #53bdeb;
-    --wa-meta-text: #667781;
-    --wa-meta-out: #667781;
-    --wa-check-sent: #8696a0;
-    --wa-check-read: #53bdeb;
-    --wa-bubble-shadow: rgba(11, 20, 26, 0.13);
+    --kk-bubble-in: #ffffff;
+    --kk-bubble-out: #d9ecfb;
+    --kk-bubble-text: #111b21;
+    --kk-author: #1565c0;
+    --kk-meta-text: #5a6b7a;
+    --kk-meta-out: #4a6076;
+    --kk-check-sent: #7b8b99;
+    --kk-check-read: #1565c0;
+    --kk-bubble-shadow: rgba(11, 20, 26, 0.13);
 
-    --wa-composer: #f0f2f5;
-    --wa-input: #ffffff;
+    --kk-composer: #edf4fc;
+    --kk-input: #ffffff;
 
-    --wa-date-pill: #ffffff;
-    --wa-date-pill-text: #54656f;
-    --wa-scroll-thumb: #cccccc;
+    --kk-date-pill: #ffffff;
+    --kk-date-pill-text: #54656f;
+    --kk-scroll-thumb: #c6d2dc;
 }
 
 [data-theme="dark"] {
-    --wa-bg: #111b21;
-    --wa-hover: #202c33;
-    --wa-selected: #2a3942;
-    --wa-border: #222d34;
-    --wa-text-primary: #e9edef;
-    --wa-text-secondary: #8696a0;
-    --wa-badge: #00a884;
-    --wa-topbar: #1f2c34;
+    --kk-primary: #1976C9;
+    --kk-primary-hover: #1463AB;
 
-    --wa-header: #202c33;
-    --wa-empty-bg: #202c33;
-    --wa-icon: #aebac1;
-    --wa-icon-hover: rgba(255, 255, 255, 0.08);
+    --kk-bg: #0e1721;
+    --kk-hover: #1b2a3a;
+    --kk-selected: #16344f;
+    --kk-border: #22303f;
+    --kk-text-primary: #e9edef;
+    --kk-text-secondary: #93a4b3;
+    --kk-badge: #1976C9;
+    --kk-topbar: #0f4c81;
 
-    --wa-chat-bg: #0b141a;
-    --wa-chat-pattern: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 400 400'%3E%3Cg fill='none' stroke='%23ffffff' stroke-opacity='0.05' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='58' cy='55' r='17'/%3E%3Cpath d='M48 62q10 10 20 0'/%3E%3Ccircle cx='52' cy='50' r='1.8'/%3E%3Ccircle cx='64' cy='50' r='1.8'/%3E%3Cpath d='M175 78c-9-13-27-8-27 5 0 12 16 22 27 33 11-11 27-21 27-33 0-13-18-18-27-5z'/%3E%3Cpath d='M330 32l6 13 14 2-10 10 2 14-12-7-13 7 3-14-10-10 14-2z'/%3E%3Cpath d='M60 155h50a9 9 0 0 1 9 9v26a9 9 0 0 1-9 9H82l-13 12v-12h-9a9 9 0 0 1-9-9v-26a9 9 0 0 1 9-9z'/%3E%3Cpath d='M195 205v-38l28-7v38'/%3E%3Cpath d='M195 205l28-7'/%3E%3Ccircle cx='189' cy='207' r='7'/%3E%3Ccircle cx='217' cy='200' r='7'/%3E%3Crect x='45' y='285' width='48' height='34' rx='7'/%3E%3Ccircle cx='69' cy='302' r='11'/%3E%3Cpath d='M58 285l6-9h14l6 9'/%3E%3Cpath d='M150 300q12-16 24 0t24 0t24 0'/%3E%3Cpath d='M320 260l46-16-18 46-9-18z'/%3E%3Cpath d='M320 260l46-16-27 29'/%3E%3Cpath d='M360 350v24M348 362h24'/%3E%3Cpath d='M250 345h34a7 7 0 0 1 7 7v16a7 7 0 0 1-7 7h-19l-10 9v-9h-12a7 7 0 0 1-7-7v-16a7 7 0 0 1 7-7z'/%3E%3Cpath d='M110 105q20 25 45 15'/%3E%3C/g%3E%3C/svg%3E");
+    --kk-header: #152130;
+    --kk-empty-bg: #10243a;
+    --kk-icon: #9fb0bf;
+    --kk-icon-hover: rgba(255, 255, 255, 0.08);
 
-    --wa-bubble-in: #202c33;
-    --wa-bubble-out: #005c4b;
-    --wa-bubble-text: #e9edef;
-    --wa-meta-text: #8696a0;
-    --wa-meta-out: rgba(255, 255, 255, 0.6);
-    --wa-check-sent: #aebac1;
-    --wa-bubble-shadow: rgba(0, 0, 0, 0.35);
+    --kk-chat-bg: #0a121b;
+    --kk-chat-pattern: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 400 400'%3E%3Cg fill='none' stroke='%23ffffff' stroke-opacity='0.05' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='58' cy='55' r='17'/%3E%3Cpath d='M48 62q10 10 20 0'/%3E%3Ccircle cx='52' cy='50' r='1.8'/%3E%3Ccircle cx='64' cy='50' r='1.8'/%3E%3Cpath d='M175 78c-9-13-27-8-27 5 0 12 16 22 27 33 11-11 27-21 27-33 0-13-18-18-27-5z'/%3E%3Cpath d='M330 32l6 13 14 2-10 10 2 14-12-7-13 7 3-14-10-10 14-2z'/%3E%3Cpath d='M60 155h50a9 9 0 0 1 9 9v26a9 9 0 0 1-9 9H82l-13 12v-12h-9a9 9 0 0 1-9-9v-26a9 9 0 0 1 9-9z'/%3E%3Cpath d='M195 205v-38l28-7v38'/%3E%3Cpath d='M195 205l28-7'/%3E%3Ccircle cx='189' cy='207' r='7'/%3E%3Ccircle cx='217' cy='200' r='7'/%3E%3Crect x='45' y='285' width='48' height='34' rx='7'/%3E%3Ccircle cx='69' cy='302' r='11'/%3E%3Cpath d='M58 285l6-9h14l6 9'/%3E%3Cpath d='M150 300q12-16 24 0t24 0t24 0'/%3E%3Cpath d='M320 260l46-16-18 46-9-18z'/%3E%3Cpath d='M320 260l46-16-27 29'/%3E%3Cpath d='M360 350v24M348 362h24'/%3E%3Cpath d='M250 345h34a7 7 0 0 1 7 7v16a7 7 0 0 1-7 7h-19l-10 9v-9h-12a7 7 0 0 1-7-7v-16a7 7 0 0 1 7-7z'/%3E%3Cpath d='M110 105q20 25 45 15'/%3E%3C/g%3E%3C/svg%3E");
 
-    --wa-composer: #202c33;
-    --wa-input: #2a3942;
+    --kk-bubble-in: #152130;
+    --kk-bubble-out: #123e5f;
+    --kk-bubble-text: #e9edef;
+    --kk-author: #6bb6f0;
+    --kk-meta-text: #93a4b3;
+    --kk-meta-out: rgba(255, 255, 255, 0.72);
+    --kk-check-sent: #9fb0bf;
+    --kk-check-read: #4fa3e3;
+    --kk-bubble-shadow: rgba(0, 0, 0, 0.35);
 
-    --wa-date-pill: #182229;
-    --wa-date-pill-text: #8696a0;
-    --wa-scroll-thumb: #374045;
+    --kk-composer: #152130;
+    --kk-input: #1c2b3b;
+
+    --kk-date-pill: #101d29;
+    --kk-date-pill-text: #93a4b3;
+    --kk-scroll-thumb: #2e3f51;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: var(--wa-font);
+    font-family: var(--kk-font);
 }
 
 html,
@@ -84,13 +89,17 @@ body,
     height: 100%;
 }
 
+body {
+    color: var(--kk-text-primary);
+}
+
 a {
     text-decoration: none;
     color: inherit;
 }
 
 .pantalla-chat {
-    background-color: var(--wa-chat-bg);
+    background-color: var(--kk-chat-bg);
     padding: 20px;
     min-height: 400px;
 }
@@ -111,8 +120,8 @@ a {
 }
 
 .modal {
-    background-color: var(--wa-bg);
-    color: var(--wa-text-primary);
+    background-color: var(--kk-bg);
+    color: var(--kk-text-primary);
     padding: 16px;
     border-radius: 12px;
     width: 100%;
@@ -149,7 +158,7 @@ a {
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    background-color: var(--wa-bg);
+    background-color: var(--kk-bg);
 }
 
 .contact-link {
@@ -158,7 +167,7 @@ a {
 }
 
 .contact-link.active .contact-option {
-    background-color: var(--wa-selected);
+    background-color: var(--kk-selected);
 }
 
 .chat-back-btn {
@@ -205,7 +214,7 @@ a {
         justify-content: center;
         width: 36px;
         height: 36px;
-        color: var(--wa-icon);
+        color: var(--kk-icon);
         border-radius: 50%;
         margin-right: 4px;
         flex-shrink: 0;
@@ -213,7 +222,7 @@ a {
     }
 
     .chat-back-btn:hover {
-        background-color: var(--wa-icon-hover);
+        background-color: var(--kk-icon-hover);
     }
 
     .burbuja-mensaje {

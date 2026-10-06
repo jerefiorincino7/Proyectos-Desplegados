@@ -13,28 +13,28 @@
 .login-field label {
     font-size: 14px;
     font-weight: 600;
-    color: var(--wa-text-secondary);
+    color: var(--kk-text-secondary);
 }
 
 .login-field input {
     width: 100%;
     padding: 11px 12px;
     font-size: 15px;
-    color: var(--wa-text-primary);
-    background-color: var(--wa-input);
-    border: 1px solid var(--wa-border);
+    color: var(--kk-text-primary);
+    background-color: var(--kk-input);
+    border: 1px solid var(--kk-border);
     border-radius: 8px;
 }
 
 .login-field input::placeholder {
-    color: var(--wa-text-secondary);
+    color: var(--kk-text-secondary);
     opacity: 0.7;
 }
 
 .login-field input:focus {
     outline: none;
-    border-color: var(--wa-green);
-    box-shadow: 0 0 0 2px rgba(0, 168, 132, 0.25);
+    border-color: var(--kk-primary);
+    box-shadow: 0 0 0 2px rgba(25, 118, 201, 0.3);
 }
 
 .login-field input[aria-invalid='true'] {
@@ -64,7 +64,7 @@
     width: 30px;
     height: 30px;
     padding: 0;
-    color: var(--wa-icon);
+    color: var(--kk-icon);
     background: none;
     border: none;
     border-radius: 50%;
@@ -72,7 +72,7 @@
 }
 
 .login-password-toggle:hover {
-    background-color: var(--wa-icon-hover);
+    background-color: var(--kk-icon-hover);
 }
 
 .login-submit {
@@ -81,7 +81,7 @@
     font-size: 15px;
     font-weight: 600;
     color: #ffffff;
-    background-color: var(--wa-green);
+    background-color: var(--kk-primary);
     border: none;
     border-radius: 8px;
     cursor: pointer;
@@ -89,7 +89,7 @@
 }
 
 .login-submit:hover:not(:disabled) {
-    background-color: var(--wa-green-dark);
+    background-color: var(--kk-primary-hover);
 }
 
 .login-submit:disabled {
@@ -100,5 +100,5 @@
 .login-hint {
     font-size: 13px;
     text-align: center;
-    color: var(--wa-text-secondary);
+    color: var(--kk-text-secondary);
 }
