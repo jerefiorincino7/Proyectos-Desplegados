@@ -18,7 +18,6 @@ function useLoginSubmit(formState) {
     const navigate = useNavigate()
     const [status, setStatus] = useState(LOGIN_STATUS.IDLE)
     const [fieldErrors, setFieldErrors] = useState({})
-    const [errorMessage, setErrorMessage] = useState("")
 
     const isLoading = status === LOGIN_STATUS.LOADING
 
@@ -51,8 +50,6 @@ function useLoginSubmit(formState) {
         evento.preventDefault()
         if (isLoading) return
 
-        setErrorMessage("")
-
         const campos_validos = validate()
         if (!campos_validos) {
             setStatus(LOGIN_STATUS.IDLE)
@@ -67,11 +64,8 @@ function useLoginSubmit(formState) {
             })
             setStatus(LOGIN_STATUS.SUCCESS)
             navigate(HOME_PATH)
-        } catch (error) {
+        } catch {
             setStatus(LOGIN_STATUS.ERROR)
-            setErrorMessage(
-                error?.message || "No se pudo iniciar sesión. Intentá de nuevo."
-            )
         }
     }
 
@@ -81,7 +75,6 @@ function useLoginSubmit(formState) {
         isLoading: isLoading,
         status: status,
         fieldErrors: fieldErrors,
-        errorMessage: errorMessage,
     }
 }
 

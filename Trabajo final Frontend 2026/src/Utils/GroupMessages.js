@@ -1,7 +1,6 @@
 import { formatDayLabel } from "./FormatDate"
 
 /**
- * Agrupa los mensajes por día calendario, preservando el orden.
  * @param {Array<{created_at: Date|string|number}>} messages
  * @returns {Array<{key: string, label: string, messages: Array}>}
  */

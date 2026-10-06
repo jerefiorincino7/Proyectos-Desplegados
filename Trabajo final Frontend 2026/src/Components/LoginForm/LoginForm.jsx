@@ -19,7 +19,6 @@ export default function LoginForm() {
         clearFieldError,
         isLoading,
         fieldErrors,
-        errorMessage,
     } = useLoginSubmit(formState)
 
     function handleFieldChange(evento) {
@@ -91,12 +90,6 @@ export default function LoginForm() {
                     </span>
                 }
             </div>
-
-            {errorMessage &&
-                <p className='error-text login-form-error' role='alert'>
-                    {errorMessage}
-                </p>
-            }
 
             <button type='submit' className='login-submit' disabled={isLoading}>
                 {isLoading ? 'Ingresando…' : 'Ingresar'}

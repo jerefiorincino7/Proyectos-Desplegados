@@ -75,11 +75,6 @@
     background-color: var(--wa-icon-hover);
 }
 
-.login-form-error {
-    font-size: 14px;
-    text-align: center;
-}
-
 .login-submit {
     width: 100%;
     padding: 12px;

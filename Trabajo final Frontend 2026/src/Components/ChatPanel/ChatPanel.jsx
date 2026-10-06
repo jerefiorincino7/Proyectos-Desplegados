@@ -36,7 +36,7 @@ export default function ChatPanel({ contact }) {
                     <path d='M64 86l4 10h34l4-10' />
                     <path d='M62 36h42a10 10 0 0 1 10 10v16a10 10 0 0 1-10 10H84l-13 10v-10h-9a10 10 0 0 1-10-10V46a10 10 0 0 1 10-10z' />
                 </svg>
-                <h1>WhatsApp Web</h1>
+                <h1>Kukukiku Messages</h1>
                 <p>Seleccioná un chat para empezar a leer y responder mensajes.</p>
                 <p className='chat-empty-note'>
                     Tus mensajes personales están cifrados de extremo a extremo.

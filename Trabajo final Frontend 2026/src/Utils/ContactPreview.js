@@ -1,5 +1,4 @@
 /**
- * Texto de preview para la lista de contactos.
  * @param {{type?: string}} contact
  * @param {{author: string, content: string}|null} lastMessage
  * @returns {string}

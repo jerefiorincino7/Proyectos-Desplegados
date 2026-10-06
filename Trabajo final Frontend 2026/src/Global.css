@@ -10,18 +10,15 @@
     --wa-badge: #25d366;
     --wa-font: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 
-    /* Panel y cabecera */
     --wa-topbar: #00a884;
     --wa-header: #f0f2f5;
     --wa-empty-bg: #f0f2f5;
     --wa-icon: #54656f;
     --wa-icon-hover: rgba(11, 20, 26, 0.06);
 
-    /* Fondo del chat (doodle estilo WhatsApp) */
     --wa-chat-bg: #efeae2;
     --wa-chat-pattern: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 400 400'%3E%3Cg fill='none' stroke='%230b141a' stroke-opacity='0.06' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='58' cy='55' r='17'/%3E%3Cpath d='M48 62q10 10 20 0'/%3E%3Ccircle cx='52' cy='50' r='1.8'/%3E%3Ccircle cx='64' cy='50' r='1.8'/%3E%3Cpath d='M175 78c-9-13-27-8-27 5 0 12 16 22 27 33 11-11 27-21 27-33 0-13-18-18-27-5z'/%3E%3Cpath d='M330 32l6 13 14 2-10 10 2 14-12-7-13 7 3-14-10-10 14-2z'/%3E%3Cpath d='M60 155h50a9 9 0 0 1 9 9v26a9 9 0 0 1-9 9H82l-13 12v-12h-9a9 9 0 0 1-9-9v-26a9 9 0 0 1 9-9z'/%3E%3Cpath d='M195 205v-38l28-7v38'/%3E%3Cpath d='M195 205l28-7'/%3E%3Ccircle cx='189' cy='207' r='7'/%3E%3Ccircle cx='217' cy='200' r='7'/%3E%3Crect x='45' y='285' width='48' height='34' rx='7'/%3E%3Ccircle cx='69' cy='302' r='11'/%3E%3Cpath d='M58 285l6-9h14l6 9'/%3E%3Cpath d='M150 300q12-16 24 0t24 0t24 0'/%3E%3Cpath d='M320 260l46-16-18 46-9-18z'/%3E%3Cpath d='M320 260l46-16-27 29'/%3E%3Cpath d='M360 350v24M348 362h24'/%3E%3Cpath d='M250 345h34a7 7 0 0 1 7 7v16a7 7 0 0 1-7 7h-19l-10 9v-9h-12a7 7 0 0 1-7-7v-16a7 7 0 0 1 7-7z'/%3E%3Cpath d='M110 105q20 25 45 15'/%3E%3C/g%3E%3C/svg%3E");
 
-    /* Burbujas de mensajes */
     --wa-bubble-in: #ffffff;
     --wa-bubble-out: #d9fdd3;
     --wa-bubble-text: #111b21;
@@ -32,18 +29,14 @@
     --wa-check-read: #53bdeb;
     --wa-bubble-shadow: rgba(11, 20, 26, 0.13);
 
-    /* Composer */
     --wa-composer: #f0f2f5;
     --wa-input: #ffffff;
 
-    /* Separador de fecha y scrollbar */
     --wa-date-pill: #ffffff;
     --wa-date-pill-text: #54656f;
     --wa-scroll-thumb: #cccccc;
 }
 
-/* ---------- Tema oscuro: única fuente de verdad de la paleta oscura ----------
-   ThemeContext sólo escribe data-theme en <html>; todo el color vive acá. */
 [data-theme="dark"] {
     --wa-bg: #111b21;
     --wa-hover: #202c33;
@@ -54,17 +47,14 @@
     --wa-badge: #00a884;
     --wa-topbar: #1f2c34;
 
-    /* Panel y cabecera */
     --wa-header: #202c33;
     --wa-empty-bg: #202c33;
     --wa-icon: #aebac1;
     --wa-icon-hover: rgba(255, 255, 255, 0.08);
 
-    /* Fondo del chat (mismo doodle, trazo blanco al 5%) */
     --wa-chat-bg: #0b141a;
     --wa-chat-pattern: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 400 400'%3E%3Cg fill='none' stroke='%23ffffff' stroke-opacity='0.05' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='58' cy='55' r='17'/%3E%3Cpath d='M48 62q10 10 20 0'/%3E%3Ccircle cx='52' cy='50' r='1.8'/%3E%3Ccircle cx='64' cy='50' r='1.8'/%3E%3Cpath d='M175 78c-9-13-27-8-27 5 0 12 16 22 27 33 11-11 27-21 27-33 0-13-18-18-27-5z'/%3E%3Cpath d='M330 32l6 13 14 2-10 10 2 14-12-7-13 7 3-14-10-10 14-2z'/%3E%3Cpath d='M60 155h50a9 9 0 0 1 9 9v26a9 9 0 0 1-9 9H82l-13 12v-12h-9a9 9 0 0 1-9-9v-26a9 9 0 0 1 9-9z'/%3E%3Cpath d='M195 205v-38l28-7v38'/%3E%3Cpath d='M195 205l28-7'/%3E%3Ccircle cx='189' cy='207' r='7'/%3E%3Ccircle cx='217' cy='200' r='7'/%3E%3Crect x='45' y='285' width='48' height='34' rx='7'/%3E%3Ccircle cx='69' cy='302' r='11'/%3E%3Cpath d='M58 285l6-9h14l6 9'/%3E%3Cpath d='M150 300q12-16 24 0t24 0t24 0'/%3E%3Cpath d='M320 260l46-16-18 46-9-18z'/%3E%3Cpath d='M320 260l46-16-27 29'/%3E%3Cpath d='M360 350v24M348 362h24'/%3E%3Cpath d='M250 345h34a7 7 0 0 1 7 7v16a7 7 0 0 1-7 7h-19l-10 9v-9h-12a7 7 0 0 1-7-7v-16a7 7 0 0 1 7-7z'/%3E%3Cpath d='M110 105q20 25 45 15'/%3E%3C/g%3E%3C/svg%3E");
 
-    /* Burbujas de mensajes */
     --wa-bubble-in: #202c33;
     --wa-bubble-out: #005c4b;
     --wa-bubble-text: #e9edef;
@@ -73,11 +63,9 @@
     --wa-check-sent: #aebac1;
     --wa-bubble-shadow: rgba(0, 0, 0, 0.35);
 
-    /* Composer */
     --wa-composer: #202c33;
     --wa-input: #2a3942;
 
-    /* Separador de fecha y scrollbar */
     --wa-date-pill: #182229;
     --wa-date-pill-text: #8696a0;
     --wa-scroll-thumb: #374045;
@@ -177,13 +165,6 @@ a {
     display: none;
 }
 
-/* ==========================================================================
-   SISTEMA DE DISEÑO RESPONSIVO MOBILE-FIRST (320px hasta 2000px+)
-   ========================================================================== */
-
-/* --------------------------------------------------------------------------
-   1. BASE: MÓVILES PEQUEÑOS / ESTÁNDAR (320px en adelante)
-   -------------------------------------------------------------------------- */
 .sidebar {
     width: 100%;
     min-width: 0;
@@ -196,7 +177,6 @@ a {
     height: 100vh;
 }
 
-/* En móviles (hasta 768px): alternar vista entre lista de chats y conversación */
 @media (max-width: 768px) {
     .home-layout .chat-panel,
     .app-layout .chat-empty {
@@ -277,9 +257,6 @@ a {
     padding: 9px 12px;
 }
 
-/* --------------------------------------------------------------------------
-   2. TABLETS / LAPTOPS PEQUEÑAS (Desde 769px)
-   -------------------------------------------------------------------------- */
 @media (min-width: 769px) {
     .app-layout {
         height: 100vh;
@@ -324,9 +301,6 @@ a {
     }
 }
 
-/* --------------------------------------------------------------------------
-   3. LAPTOPS ESTÁNDAR (Desde 1025px)
-   -------------------------------------------------------------------------- */
 @media (min-width: 1025px) {
     .app-layout .sidebar {
         width: 350px !important;
@@ -341,9 +315,6 @@ a {
     }
 }
 
-/* --------------------------------------------------------------------------
-   4. ESCRITORIOS / MONITORES FULL HD (Desde 1281px)
-   -------------------------------------------------------------------------- */
 @media (min-width: 1281px) {
     .app-layout .sidebar {
         width: 380px !important;
@@ -358,9 +329,6 @@ a {
     }
 }
 
-/* --------------------------------------------------------------------------
-   5. PANTALLAS ULTRA ANCHAS / 2K O SUPERIOR (Desde 1921px)
-   -------------------------------------------------------------------------- */
 @media (min-width: 1921px) {
     html {
         font-size: 17px;

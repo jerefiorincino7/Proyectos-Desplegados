@@ -54,7 +54,7 @@ export default function ContactsList() {
             </div>
             <div className="sidebar-contacts">
                 {filteredContacts.length === 0
-                    ? <span>No contacts found</span>
+                    ? <span>No se encontró el contacto</span>
                     : contactsJsx
                 }
             </div>
